@@ -9,7 +9,7 @@
 
 #define EMIO_0 78	// 0~77 are number of MIO
 #define EMIO_1 79	// 78 for EMIO[0] and 79 for EMIO[1] and so on.
-					// Reference to ug1085 page.770
+			// Reference to ug1085 page.770
 
 XGpioPs EMIO;	// a XGpioPs struct named EMIO
 XScuGic INTC;	// a XScuGic struct named INTC
