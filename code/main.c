@@ -82,6 +82,7 @@ int main()
 	{
 		// Convenience to change the output voltage
 		scanf("%d", &x);
+		printf("%d\n", x);
 		XGpioPs_WritePin(&EMIO, EMIO_1, x&0x01);
 	}
     return 0;
