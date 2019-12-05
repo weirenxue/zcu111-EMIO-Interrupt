@@ -6,7 +6,7 @@
 #### 2. PL設計的部份，都與[zcu111-EMIO](https://github.com/weirenxue/zcu111-EMIO)範例相同，在此不再贅述。
 
 #### 3. 將pmod的(J48.1)與(J49.1)用杜邦線接在一起。
-<p align=center><img src="https://github.com/weirenxue/zcu111-EMIO-Interrupt/blob/readme-edits/pic/pmodConnect.png"  title="Pmod Connect" width="20%"></p>
+<p align=center><img src="https://github.com/weirenxue/zcu111-EMIO-Interrupt/blob/master/pic/pmodConnect.png"  title="Pmod Connect" width="20%"></p>
 
 #### 4. 程式設計概念：
         1. J49.1當作輸出，J48.1當作輸入。
