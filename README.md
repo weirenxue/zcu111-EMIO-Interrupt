@@ -17,4 +17,4 @@
         3. 創建一個函式，裡面包含中斷發生後所需執行的指令，例如此範例：若進到中斷處理函數內，則print"中斷發生"。
         
 #### 5. 燒錄後測試方式：使用SDK Terminal與ZCU111連線，並輸入0或1代表輸出的EMIO為高電位或低電位，觀察並發現只有當0轉為1時發生中斷。
-          
+<p align=center><img src="https://github.com/weirenxue/zcu111-EMIO-Interrupt/blob/master/pic/Validate_rising_edge_interrupt.png"  title="Pmod Connect" width="50%"></p>

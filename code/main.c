@@ -17,7 +17,13 @@ XScuGic INTC;	// a XScuGic struct named INTC
 // Interrupt handler function
 static void IntrHandler(void *CallBackRef, u32 Bank, u32 Status)
 {
+	// Prevent interrupted when handling
+	XGpioPs_IntrDisablePin(&EMIO, EMIO_0);
 	printf("interrupt occured\n");
+	// Clears the specified pending interrupt.
+	XGpioPs_IntrClearPin(&EMIO, EMIO_0);
+	// Enable pin interrupt
+	XGpioPs_IntrEnablePin(&EMIO, EMIO_0);
 }
 
 int main()
@@ -82,6 +88,7 @@ int main()
 	{
 		// Convenience to change the output voltage
 		scanf("%d", &x);
+		printf("%d\n", x);
 		XGpioPs_WritePin(&EMIO, EMIO_1, x&0x01);
 	}
     return 0;
